@@ -155,7 +155,7 @@ a {
   position: absolute;
   inset: 0;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -515,6 +515,21 @@ h2 {
   font-size: clamp(1.25rem, 2vw, 1.8rem);
 }
 
+.topic-list strong {
+  display: block;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.topic-list p {
+  max-width: 54ch;
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .topic-list span {
   color: var(--orange-dark);
   font-family: var(--sans);
@@ -627,6 +642,15 @@ h2 {
 .book-note {
   margin: 2.5rem 0 0;
   color: var(--muted);
+  scroll-margin-top: 120px;
+}
+
+#about,
+#speaking,
+#podcasts,
+#thoughts,
+#contact {
+  scroll-margin-top: 90px;
 }
 
 .contact {
