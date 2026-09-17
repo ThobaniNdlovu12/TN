@@ -663,19 +663,110 @@ h2 {
 
 .contact h2 {
   max-width: 13ch;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
 .contact .eyebrow {
   color: rgba(16, 17, 15, 0.62);
 }
 
-.contact-actions {
+.contact-copy > p:not(.eyebrow) {
+  max-width: 48ch;
+  margin-bottom: 2rem;
+  font-size: 1.08rem;
+}
+
+.contact-email {
+  font-weight: 700;
+  text-underline-offset: 0.35rem;
+}
+
+.contact-panel {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
-  gap: 2rem;
+  gap: 1.75rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  background: var(--paper);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.contact-form label > span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(16, 17, 15, 0.24);
+  border-radius: 0;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+
+.contact-form input,
+.contact-form select {
+  min-height: 3.25rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.contact-form textarea {
+  min-height: 9rem;
+  padding: 0.85rem;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--ink);
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+.form-submit {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  justify-self: start;
+}
+
+.form-submit span {
+  margin-left: 0.45rem;
+  color: var(--orange);
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.form-success {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  background: var(--forest);
+  color: var(--white);
+  font-weight: 700;
 }
 
 .social-links {
@@ -899,8 +990,12 @@ h2 {
     min-height: 430px;
   }
 
-  .contact-actions {
-    align-items: stretch;
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-submit {
+    width: 100%;
   }
 
   .site-footer {
