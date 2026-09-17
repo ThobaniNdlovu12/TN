@@ -723,6 +723,59 @@ h2 {
   text-transform: uppercase;
 }
 
+.book-section {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: center;
+}
+
+.book-image {
+  margin: 0;
+}
+
+.book-image img {
+  height: auto;
+}
+
+.book-copy h2 {
+  max-width: 10ch;
+}
+
+.book-copy > p:not(.eyebrow) {
+  max-width: 62ch;
+}
+
+.book-quote {
+  margin: 3rem 0 0;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--sand);
+}
+
+.book-quote p {
+  max-width: 16ch;
+  margin: 0 0 1rem;
+  color: var(--orange-dark);
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.book-quote cite {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
 .writing {
   max-width: var(--max);
   margin: 0 auto;
@@ -1018,6 +1071,7 @@ h2 {
 
   .about-grid,
   .speaking-grid,
+  .book-grid,
   .writing-intro,
   .podcasts-intro,
   .contact {
