@@ -22,3 +22,11 @@ if (menuButton && nav) {
 
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = new Date().getFullYear();
+
+const formSuccess = document.querySelector("[data-form-success]");
+const query = new URLSearchParams(window.location.search);
+
+if (formSuccess && query.get("message") === "sent") {
+  formSuccess.hidden = false;
+  window.history.replaceState({}, "", `${window.location.pathname}#contact`);
+}
