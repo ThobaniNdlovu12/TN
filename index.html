@@ -29,7 +29,7 @@
         <a href="#podcasts">Podcasts</a>
         <a href="#books">Books</a>
         <a href="#thoughts">My Thoughts</a>
-        <a class="nav-cta" href="mailto:thobani@tedxdurban.org?subject=Booking%20enquiry%20for%20Thobani%20Ndlovu">Book Thobani</a>
+        <a class="nav-cta" href="#contact">Book Thobani</a>
       </nav>
     </header>
 
@@ -120,7 +120,7 @@
               <li><span>03</span><div><strong>Words create worlds</strong><p>How language, conversations and ideas shape relationships, communities and what we believe is possible.</p></div></li>
               <li><span>04</span><div><strong>Humanoid</strong><p>Why our relationship with artificial intelligence should help us lean further into empathy, imagination, curiosity and everything that makes us human.</p></div></li>
             </ul>
-            <a class="button button-orange" href="mailto:thobani@tedxdurban.org?subject=Speaking%20enquiry%20for%20Thobani%20Ndlovu">Invite Thobani to speak</a>
+            <a class="button button-orange" href="#contact">Invite Thobani to speak</a>
           </div>
         </div>
       </section>
@@ -166,11 +166,49 @@
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="contact-copy">
-          <p class="eyebrow">Let’s build something meaningful</p>
-          <h2 id="contact-title">If it could shape a space, shift perspective or move people, I would like to hear about it.</h2>
+          <p class="eyebrow">Contact & bookings</p>
+          <h2 id="contact-title">Let’s start a meaningful conversation.</h2>
+          <p>For speaking, facilitation, collaborations, architecture or general enquiries, send me a message and I’ll respond by email.</p>
+          <a class="contact-email" href="mailto:thobani@tedxdurban.org">thobani@tedxdurban.org</a>
         </div>
-        <div class="contact-actions">
-          <a class="button button-light" href="mailto:thobani@tedxdurban.org">thobani@tedxdurban.org</a>
+        <div class="contact-panel">
+          <p class="form-success" data-form-success hidden>Thank you. Your message has been sent.</p>
+          <form class="contact-form" action="https://formsubmit.co/thobani@tedxdurban.org" method="POST">
+            <input type="hidden" name="_subject" value="New enquiry from thobanindlovu.co.za" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://thobanindlovu.co.za/?message=sent#contact" />
+            <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
+
+            <label>
+              <span>What would you like to discuss?</span>
+              <select name="enquiry_type" required>
+                <option value="" selected disabled>Select an enquiry type</option>
+                <option>Speaking engagement</option>
+                <option>Event facilitation or moderation</option>
+                <option>Architecture or spatial design</option>
+                <option>Collaboration or partnership</option>
+                <option>General enquiry</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+
+            <button class="button button-dark form-submit" type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
+          </form>
           <div class="social-links" aria-label="Social links">
             <a href="https://www.linkedin.com/in/thobani-ndlovu-4a5563190/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             <a href="https://www.instagram.com/thobanindlovu_/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a>
